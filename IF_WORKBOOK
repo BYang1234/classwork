@@ -1,0 +1,86 @@
+#34
+user_number = int(input("Enter a number:"))
+if user_number % 2 ==0:
+  print("Your number is even")
+else:
+  print("Your number is odd")
+
+#35
+human_years = int(input("Enter the number of humans years:"))
+if human_years > 2:
+  dog_years = (2 * 10.5) + ((human_years - 2) *4)
+  print(dog_years)
+elif human_years <= 2 and human_years >= 0:
+  dog_years = (human_years * 10.5)
+  print(dog_years)
+else:
+  print("Erroe, cannot calculate with negative numbers!!")
+
+#36
+print("Please enter a letter:")
+letter = input()
+if letter == "a" :
+  print("The letter is a vowel")
+elif letter == "e":
+  print("The letter is a vowel")
+elif letter == "i":
+  print("The letter is a vowel")
+elif letter == "o":
+  print("The letter is a vowel")
+elif letter == "u":
+  print("The letter is a vowel")
+else:
+  print("The letter is a consonant")
+
+#37
+print("Please enter the number of sides:")
+sides = int(input())
+if sides == 3:
+  print("The shape is a triangle.")
+elif sides == 4:
+  print("The shape is a square.")
+elif sides == 5:
+  print("The shape is a pentagon.")  
+elif sides == 6:
+  print("The shape is a hexagon.")
+elif sides == 7:
+  print("The shape is a heptagon.")
+elif sides == 8:
+  print("The shape is a octagon.")
+elif sides == 9:
+  print("The shape is a nonagon.")
+elif sides == 10:
+  print("The shape is a decagon.")
+elif sides == 11:
+  print("The shape is a hendecagon")
+elif sides == 12:
+  print("The shape is a dodecagon.")
+else:
+  print("The shape is undetermined, it is out of the range.")
+
+#48
+year = int(input("What year were u born??"))
+if year % 12 == 8:
+  print("You are the year of the horse")
+elif year % 12 == 9:
+  print("You are the year of the snake")
+elif year % 12 == 10:
+  print("You are the year of the horse")
+elif year % 12 == 11:
+  print("You are the year of the sheep")
+elif year % 12 == 0:
+  print("You are the year of the monkey")
+elif year % 12 == 1:
+  print("You are the year of the rooster")
+elif year % 12 == 2:
+  print("You are the year of the dog")
+elif year % 12 == 3:
+  print("You are the year of the pig")
+elif year % 12 == 4:
+  print("You are the year of the rat") 
+elif year % 12 == 5:
+  print("You are the year of the ox")
+elif year % 12 == 6:
+  print("You are the year of the tiger")
+elif year % 12 == 7:
+  print("You are the year of the hare")
