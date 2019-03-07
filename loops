@@ -29,7 +29,6 @@ for i in range(10):
   print(word) 
 
 #6
-num = 3
 for num in range(101):
   if num % 3 == 0:
     print(num)
