@@ -1,0 +1,41 @@
+#1
+word = input("Enter a word:")
+for char in word:
+  if (char != "a" and char != "e" and char != "i" and char != "u" and char != "o"):
+    print(char)
+
+#2 
+numbers = [47, 50, 62, 0, 9, 1, 12]
+for num in numbers:
+  if num > 10:
+    print(num)
+
+#3
+number_list = [1, 5, 10, 50]
+max = 0 
+for num in number_list:
+  if num > max:
+    max = num
+print(max)    
+
+#4
+name = input("Enter your name:")
+for i in range(len(name)):
+    print(f"index: {i}, char: {name[i]}")
+
+#5
+word = "hello"
+for i in range(10):
+  print(word) 
+
+#6
+num = 3
+for num in range(101):
+  if num % 3 == 0:
+    print(num)
+
+#7
+total = 0
+for num in range(11):
+  total += num  
+print(total)
