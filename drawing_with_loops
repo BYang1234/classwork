@@ -3,7 +3,7 @@
     x_end = 600
     wid = 20
     height_1 = 100
-    for num in range(10, 640, 20):
+    for num in range(640):
         if x >= x_end:
             pass
         else:
