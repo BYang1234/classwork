@@ -8,5 +8,5 @@
             pass
         else:
           arcade.draw_rectangle_filled(x, y, wid, height_1, arcade.color.DARK_GREEN)
-          arcade.draw_triangle_filled(x - 30, y + 50, x, y + 140, x + 30, y + 50, arcade.color.BROWN)
+          arcade.draw_triangle_filled(x - 30, y + 50, x, y + 160, x + 30, y + 50, arcade.color.BROWN)
         x += 100
