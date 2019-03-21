@@ -5,7 +5,7 @@ WIDTH = 640
 HEIGHT = 480
 player_health = 100
 player_max_health = 350
-max_bar_width = player_health /100 * 200
+max_bar_width = player_health / player_max_health * 200
 
 def update(delta_time):
     pass
@@ -15,7 +15,7 @@ def on_draw():
     arcade.start_render()
     arcade.draw_rectangle_filled(320, 240, 200, 50, arcade.color.BLACK)
     arcade.draw_xywh_rectangle_filled(220, 215, max_bar_width, 50, arcade.color.GREEN)
-    arcade.draw_text(f"{player_health}/100", 220, 215, arcade.color.WHITE, 20)
+    arcade.draw_text(f"{player_health}/{player_max_health}", 220, 215, arcade.color.WHITE, 20)
 
 def on_key_press(key, modifiers):
     pass
