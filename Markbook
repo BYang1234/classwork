@@ -1,0 +1,48 @@
+#Markbook program
+students = ["John", "Mark", "Mary"]
+marks = [65, 100, 48]
+average = 0
+option_1 = "Check students"
+option_2 = "Check student averages"
+at_risk = 0
+while True:
+    print("Markbook")
+    print("Menu:")
+    print(option_1, "or", option_2)
+    choice = int(input("Option 1 or 2:"))
+    if choice == 1:
+        choice_1 = int(input("Enter 1 to add new students or enter 2 to remove students:"))
+        choice_2 = 2
+        if choice_1 == 1:
+            new_students = input("Enter new students")
+            students.append(new_students)
+            print(students)
+        elif choice_2 == 2:
+            print(students)
+            print("Enter the index of the student you want to remove:")
+            i = int(input("Enter the index:"))
+            del (students[i])
+            print(students)
+    elif choice == 2:
+        print(option_2)
+        choice_3 = int(input("Enter student marks or check average or check at-risk students or check highest mark:"))
+        choice_4 = 4
+        choice_5 = 5
+        choice_6 = 6
+        if choice_3 == 3:
+            new_marks = int(input("Enter a new mark:"))
+            marks.append(new_marks)
+            print(marks)
+        elif choice_4 == 4:
+            for i in range(len(marks)):
+                average += marks[i]
+                i += 1
+            average = average / i
+            print(average)
+        elif choice_5 == 5:
+            for i in range(len(marks)):
+                if i <= 65:
+                    at_risk += 1
+                else:
+                    pass
+            print(at_risk)
